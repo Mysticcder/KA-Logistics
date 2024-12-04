@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA Logistics</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/conc.png" alt="KA Logistics Logo">
+            <h1>KA Logistics</h1>
+            <p>Tuko Pamoja</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#offers">What We Offer</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <div>
+        <div class="bann">
+            <h1>Welcome to KA Logistics</h1>
+            <img src="images/conc.png" alt="banner1", height="1050px", width="1050px" >
+            <p>Discover the hidden gems of our community, join our virtual trucking company, and become a part of our friendly and strong community.</p>
+s
+        </div>
+    </div> -->
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>KA Logistics is a virtual trucking company dedicated to building a strong and friendly community...</p>
+            <div id="vtc-info">
+                <p>Number of Members: <span id="vtc-members">Loading...</span></p>
+              </div>
+              
+            <script>
+              // Fetch the number of VTC members from a remote API (for demonstration purposes)
+              // Replace '/vtc-info' with your actual API endpoint
+              // Make sure to handle potential errors and edge cases
+            async function fetchVTCInfo() {
+                try {
+                  const response = await fetch('62215');
+                  if (!response.ok) throw new Error("Failed to fetch VTC data");
+              
+                  const data = await response.json();
+                  document.getElementById('vtc-members').textContent = data.members || 'Data not available';
+                } catch (error) {
+                  console.error("Error fetching VTC info:", error);
+                  document.getElementById('vtc-members').textContent = 'Error loading data';
+                }
+              }
+              
+              fetchVTCInfo();
+              </script>
+                  
+    </section>
+
+    <section id="join-us">
+        <h2>Join Us</h2>
+        <p>Ready to become part of KA Logistics? Follow the steps below to apply:</p><br>
+      
+        <ol>
+            <li>
+                <strong>Step 1: Join Our Discord Server</strong>
+                <p>Click <a href="https://discord.com/invite/db9g2xGujb" target="_blank">here</a> to join our Discord server and introduce yourself.</p>
+            </li>
+            <li>
+                <strong>Step 2: Contact Recruitment via WhatsApp</strong>
+                <p>Reach out to us via WhatsApp for further instructions. Click <a href="https://wa.me/your-whatsapp-link" target="_blank">here</a> to connect with our team.</p>
+            </li>
+            <li>
+                <strong>Step 3: Training</strong>
+                <p>Participate in our training sessions to learn the rules and expectations.</p>
+            </li>
+        </ol>
+        <h3>VTC Rules</h3>
+        <ul>
+            <li>Follow traffic rules and company policies.</li>
+            <li>Be respectful to all community members.</li>
+            <li>Active participation in convoys is required.</li>
+        </ul>
+        <h3>Event Rules</h3>
+        <ul>
+            <li>Follow the convoy leader’s instructions.</li>
+            <li>No overtaking unless instructed.</li>
+            <li>Maintain proper spacing between trucks.</li>
+        </ul>
+    </section>
+
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 1">
+                <h3>Elvis Vudive</h3>
+                <p>Founder & CEO</p>
+                <blockquote>"Together, we build the strongest trucking community!"</blockquote>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 2">
+                <h3>Jeremy Mcoasty</h3>
+                <p>Event Coordinator</p>
+                <blockquote>"Creating fun and engaging events is my passion."</blockquote>
+                <!-- Event Team Grid -->
+                <button class="collapsible">View Event Team</button>
+                <div class="event-team-grid">
+                    <div class="event-team-member">
+                        <img src="images/conc.png" alt="Michael Clark">
+                        <h4>LuffyDonno</h4>
+                        <p>Event Organizer</p>
+                        <blockquote>"Planning memorable events is my forte."</blockquote>
+                    </div>
+                    <div class="event-team-member">
+                        <img src="images/conc.png" alt="Lucy Stevens">
+                        <h4>Ke roadrunner</h4>
+                        <p>Event Designer</p>
+                        <blockquote>"I create unique designs that bring life to our events."</blockquote>
+                    </div>
+                    <div class="event-team-member">
+                        <img src="images/conc.png" alt="David Kim">
+                        <h4>Mickey 254</h4>
+                        <p>Convoy Planner</p>
+                        <blockquote>"Organizing routes for smooth convoys is my mission."</blockquote>
+                    </div>
+                    <div class="event-team-member">
+                        <img src="images/conc.png" alt="David Kim">
+                        <h4>Ricky</h4>
+                        <p>Convoy Planner</p>
+                        <blockquote>"Organizing routes for smooth convoys is my mission."</blockquote>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 3">
+                <h3>Bliss254</h3>
+                <p>Media Manager</p>
+                <blockquote>"Bringing the best drivers into our team is my mission."</blockquote>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 4">
+                <h3>SAMM</h3>
+                <p>Manager</p>
+                <blockquote>"Together, we build the strongest trucking community!"</blockquote>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 5">
+                <h3>Ngari</h3>
+                <p>Manager</p>
+                <blockquote>"Together, we build the strongest trucking community!"</blockquote>
+            </div>
+             <!-- Team Member 6 -->
+             <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 6">
+                <h3></h3>
+                <p>Human Resource Manager</p>
+                <blockquote>"Together, we build the strongest trucking community!"</blockquote>
+            </div>
+             <!-- Team Member 7 -->
+             <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 7">
+                <h3></h3>
+                <p>Senior Manager</p>
+                <blockquote>"Together, we build the strongest trucking community!"</blockquote>
+            </div>
+             <!-- Team Member 8 -->
+             <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 8">
+                <h3></h3>
+                <p>Technical Manager</p>
+                <blockquote>"Together, we build the strongest trucking community!"</blockquote>
+            </div>
+             <!-- Team Member 9 -->
+             <div class="team-member">
+                <img src="images/conc.png" alt="Team Member 9">
+                <h3></h3>
+                <p>Operation Manager</p>
+                <blockquote>"Together, we build the strongest trucking community!"</blockquote>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- What We Offer -->
+    <section id="offers">
+        <h2>What We Offer</h2>
+        <div class="offer-grid">
+            <div class="offer">
+                <h3>Weekly Convoys</h3>
+                <p>Experience organized and fun-filled convoys every week.</p>
+            </div>
+            <div class="offer">
+                <h3>Rewards for Best Drivers</h3>
+                <p>Monthly recognition with exciting prizes for top performers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/convoy11.webp" alt="Convoy 1">
+            <img src="images/convoy12.webp" alt="Convoy 2">
+            <img src="images/convoy13.webp" alt="Convoy 3">
+            <img src="images/convoy14.webp" alt="Convoy 4">
+            <img src="images/convoy15.webp" alt="Convoy 5">
+            <img src="images/convoy16.webp" alt="Convoy 6">
+
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="discord-members">Fetching Discord stats...</p>
+
+    </section>
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@ka_logistics" target="_blank" class="social-link">
+            <img src="images/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/ka_logistics" target="_blank" class="social-link">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/@vudiveplays?si=mpgyLOHuSzp9PHaO" target="_blank" class="social-link">
+            <img src="images/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://discord.com/invite/db9g2xGujb" target="_blank" class="social-link">
+            <img src="images/discord.png" alt="Discord">
+        </a>
+        <a href="https://truckersmp.com/vtc/62215" target="_blank" class="social-link">
+            <img src="images/truckersmp.png" alt="TruckersMp">
+        </a>
+        <a href="https://trucksbook.eu/company/186726" target="_blank" class="social-link">
+            <img src="images/trucksbook.png" alt="TrucksBook">
+        </a>
+    </div>
+</div>
+
+    <footer>
+        <p>© 2024 KA Logistics. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
